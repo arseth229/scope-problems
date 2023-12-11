@@ -23,9 +23,36 @@ console.log(table2(1)); // prints 6
 console.log(table2(75)); // STILL prints 6
 
 ***********************************************************************/
-function recVolume(height) {
-  // Your code here
+function recVolume(height) {  
+  let calls = 0;
+  let total = height;
+  if (calls === 0) {
+    calls += 1
+    return inner;
+  } 
+  function inner(w) {
+    if (calls < 3) {
+    if (calls === 1) {
+      total *= w
+      calls += 1
+      return inner;
+    }
+    else if (calls === 2) {
+      total *= w;
+      calls += 1
+      return total;
+    }
+  } else {
+    return total; 
+  }
+ }
 }
+
+
+
+
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

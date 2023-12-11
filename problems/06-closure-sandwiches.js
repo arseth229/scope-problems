@@ -18,8 +18,15 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 
 function sandwichMaker() {
-  // Your code here
-}
+  let ingredients = [`tomato`];
+  return newIngred => {
+    if (newIngred) {
+      ingredients.push(newIngred);
+    }
+    const sandyString = `One sandwich with ${ingredients.join(` and `)}`;
+    return sandyString;
+  };
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

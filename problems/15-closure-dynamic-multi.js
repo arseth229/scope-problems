@@ -19,7 +19,12 @@ multiplyByFive(5); // returns 25
 ***********************************************************************/
 
 function dynamicMultiply(num) {
-  // Your code here
+  let mult = num; 
+  return dynam;
+  function dynam(n) {
+    let prod = n * mult;
+    return prod;
+  };
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

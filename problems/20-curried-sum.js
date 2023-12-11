@@ -43,7 +43,18 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 function curriedSum(numArgs) {
-  // Your code here
+  let numbers = [];
+  return function _curriedSum(num) {
+    if (numbers.length < numArgs) {
+      numbers.push(num);
+    }
+    if (numbers.length === numArgs) {
+      let add = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+      return add;
+    } else {
+      return _curriedSum;
+    }
+  }
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

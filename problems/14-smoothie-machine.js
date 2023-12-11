@@ -24,7 +24,19 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 const smoothieMachine = (...ingredients) => {
-  // Your code here
+  let ing1 = [...ingredients]
+  let finsen = []
+  return makeSmoothie;
+
+  function makeSmoothie(...moreIngredients) {
+    
+    let ing2 = [...moreIngredients]
+    let ingsen = ing2.join(` and `);
+    ing1.push(ingsen);
+    finsen = ing1.join(` and `)
+    return `I'm having a smoothie with ${finsen}`;
+  }
+  
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
